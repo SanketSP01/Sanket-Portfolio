@@ -396,7 +396,7 @@ header .sticky {
 }
 
 .contact {
-    height: 90vh;
+    height: 72vh;
 }
 
 .contact_form {
@@ -451,13 +451,14 @@ form .send_btn:hover {
 }
 
 .footer {
-    padding: 22px 16%;
     background: var(--second-bg-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    top: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .copyright p {
@@ -765,11 +766,29 @@ form .send_btn:hover {
         font-size: 10px;
     }
 
+    .h-btn {
+        font-size: 10px !important;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 25px !important;
+    }
+
 }
 
-@media (max-width: 321px) {
+@media (max-width: 320px) {
     .send_btn {
         font-size: 9px !important;
+        padding: 10px !important;
+    }
+
+    .logo {
+        font-size: 20px !important;
+    }
+
+    .h-btn {
+        font-size: 10px !important;
         padding: 10px !important;
     }
 }
