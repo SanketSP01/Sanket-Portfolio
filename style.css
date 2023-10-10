@@ -349,7 +349,7 @@ header .sticky {
     margin-bottom: 0.5rem;
 }
 
-.row h5 {
+.row p {
     font-size: 20px;
     font-weight: 400;
     color: var(--other-color);
@@ -396,7 +396,7 @@ header .sticky {
 }
 
 .contact {
-    height: 65vh;
+    height: 90vh;
 }
 
 .contact_form {
@@ -457,7 +457,6 @@ form .send_btn:hover {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    position: sticky;
     top: 100%;
 }
 
@@ -620,14 +619,42 @@ form .send_btn:hover {
 
 }
 
-@media (max-width: 680px) {
+@media (max-width: 821px) {
     .main_content p {
-        width: 100%;
+        width: 90%;
     }
 
+    .row {
+        height: auto;
+        width: 50%;
+    }
+
+    .portfolio_content {
+        column-count: 2;
+
+    }
+
+    .row img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .row_text h5 {
+        font-size: 20px !important;
+    }
+
+    .row p {
+        font-size: 15px;
+    }
+
+    .row_icon a i {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+    }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 426px) {
     :root {
         --h1-font: 2.7rem;
         --h2-font: 1.9rem;
@@ -642,5 +669,107 @@ form .send_btn:hover {
         border-radius: 50%;
         object-fit: cover;
         margin: 0 auto;
+    }
+
+
+    .box h3 {
+        font-size: 15px;
+    }
+
+    .box p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+
+    .box img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .box {
+        padding: 15px;
+        width: 200px;
+    }
+
+    .box a {
+        font-size: 10px;
+
+    }
+
+    .box a i {
+        font-size: 10px;
+
+    }
+
+    .row {
+        height: auto;
+        width: 300px;
+        padding: 10px;
+    }
+
+    .portfolio_content {
+        column-count: 2;
+
+    }
+
+    .row img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .row_text h5 {
+        font-size: 15px;
+    }
+
+    .row p {
+        font-size: 10px;
+    }
+
+    .row_icon a i {
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .send_btn {
+        font-size: 10px !important;
+        padding: 10px !important;
+    }
+
+
+
+}
+
+
+@media (max-width: 376px) {
+    .row img {
+        height: 100px;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .row {
+        height: 210px;
+        width: 70%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .row_text h5 {
+        font-size: 15px !important;
+    }
+
+    .row p {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 321px) {
+    .send_btn {
+        font-size: 9px !important;
+        padding: 10px !important;
     }
 }
